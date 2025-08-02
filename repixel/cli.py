@@ -1,5 +1,5 @@
 """
-Command-line interface for repixel image compression tool
+Command-line interface for re-pixel image compression tool
 """
 
 import click

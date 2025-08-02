@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2025-08-01
 
 ### Added
-- Initial release of Repixel image compression library
+- Initial release of Re-pixel image compression library
 - Multi-format support (JPEG, PNG, WebP, BMP, TIFF)
 - Smart compression with quality optimization
 - Batch processing capabilities

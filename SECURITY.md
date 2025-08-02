@@ -10,11 +10,11 @@ We release patches for security vulnerabilities for the following versions:
 
 ## Reporting a Vulnerability
 
-The Repixel team takes security bugs seriously. We appreciate your efforts to responsibly disclose your findings, and will make every effort to acknowledge your contributions.
+The Re-pixel team takes security bugs seriously. We appreciate your efforts to responsibly disclose your findings, and will make every effort to acknowledge your contributions.
 
-To report a security issue, please use the GitHub Security Advisory ["Report a Vulnerability"](https://github.com/rakshithkalmadi/repixel/security/advisories/new) tab.
+To report a security issue, please use the GitHub Security Advisory ["Report a Vulnerability"](https://github.com/rakshithkalmadi/re-pixel/security/advisories/new) tab.
 
-The Repixel team will send a response indicating the next steps in handling your report. After the initial reply to your report, the security team will keep you informed of the progress towards a fix and full announcement, and may ask for additional information or guidance.
+The Re-pixel team will send a response indicating the next steps in handling your report. After the initial reply to your report, the security team will keep you informed of the progress towards a fix and full announcement, and may ask for additional information or guidance.
 
 ## Disclosure Policy
 

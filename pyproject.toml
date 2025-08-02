@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "repixel"
+name = "re-pixel"
 version = "1.0.0"
 authors = [
     {name = "Rakshith Kalmadi", email = "rakshithkalmadi@gmail.com"},
@@ -47,12 +47,12 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/rakshithkalmadi/repixel"
-"Bug Tracker" = "https://github.com/rakshithkalmadi/repixel/issues"
-"Source Code" = "https://github.com/rakshithkalmadi/repixel"
+Homepage = "https://github.com/rakshithkalmadi/re-pixel"
+"Bug Tracker" = "https://github.com/rakshithkalmadi/re-pixel/issues"
+"Source Code" = "https://github.com/rakshithkalmadi/re-pixel"
 
 [project.scripts]
-repixel = "repixel.cli:main"
+re-pixel = "repixel.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]

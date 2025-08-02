@@ -1,7 +1,7 @@
 #!/bin/bash
 # Quick setup script for Unix-like systems
 
-echo "🚀 Setting up Repixel development environment"
+echo "🚀 Setting up Re-pixel development environment"
 
 # Check if Python 3.7+ is available
 python3 --version || { echo "Python 3.7+ is required"; exit 1; }
@@ -19,7 +19,7 @@ echo "⬆️  Upgrading pip..."
 pip install --upgrade pip
 
 # Install package in development mode
-echo "📥 Installing repixel in development mode..."
+echo "📥 Installing re-pixel in development mode..."
 pip install -e ".[dev]"
 
 echo "✅ Setup complete!"

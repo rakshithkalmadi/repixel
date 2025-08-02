@@ -1,10 +1,10 @@
-# Repixel 🎨
+# Re-pixel 🎨
 
-[![PyPI version](https://badge.fury.io/py/repixel.svg)](https://badge.fury.io/py/repixel)
-[![Python versions](https://img.shields.io/pypi/pyversions/repixel.svg)](https://pypi.org/project/repixel/)
+[![PyPI version](https://badge.fury.io/py/re-pixel.svg)](https://badge.fury.io/py/re-pixel)
+[![Python versions](https://img.shields.io/pypi/pyversions/re-pixel.svg)](https://pypi.org/project/re-pixel/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Repixel** is a powerful and versatile Python library for image compression that supports multiple formats and algorithms. It provides both a simple Python API and a feature-rich command-line interface for compressing images while maintaining optimal quality.
+**Re-pixel** is a powerful and versatile Python library for image compression that supports multiple formats and algorithms. It provides both a simple Python API and a feature-rich command-line interface for compressing images while maintaining optimal quality.
 
 ## ✨ Features
 
@@ -22,22 +22,22 @@
 ### From PyPI (Recommended)
 
 ```bash
-pip install repixel
+pip install re-pixel
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/rakshithkalmadi/repixel.git
-cd repixel
+git clone https://github.com/rakshithkalmadi/re-pixel.git
+cd re-pixel
 pip install -e .
 ```
 
 ### Development Installation
 
 ```bash
-git clone https://github.com/rakshithkalmadi/repixel.git
-cd repixel
+git clone https://github.com/rakshithkalmadi/re-pixel.git
+cd re-pixel
 pip install -e ".[dev]"
 ```
 
@@ -84,19 +84,19 @@ result = compressor.optimize_quality(
 
 ```bash
 # Compress a single image
-repixel compress photo.jpg -q 80 -f webp -o photo_compressed.webp
+re-pixel compress photo.jpg -q 80 -f webp -o photo_compressed.webp
 
 # Batch compress images in a directory
-repixel batch photos/ -o compressed/ -q 85 -f webp --recursive
+re-pixel batch photos/ -o compressed/ -q 85 -f webp --recursive
 
 # Find optimal quality for target size
-repixel optimize large_photo.jpg --target-size 2.0 -f jpeg -o optimized.jpg
+re-pixel optimize large_photo.jpg --target-size 2.0 -f jpeg -o optimized.jpg
 
 # Get image information
-repixel info photo.jpg
+re-pixel info photo.jpg
 
 # List supported formats
-repixel formats
+re-pixel formats
 ```
 
 ## 🔧 Advanced Usage
@@ -189,16 +189,16 @@ print(f"Megapixels: {info['megapixels']} MP")
 
 ```bash
 # High quality JPEG compression
-repixel compress input.jpg -q 95 -f jpeg --progressive --optimize
+re-pixel compress input.jpg -q 95 -f jpeg --progressive --optimize
 
 # Batch convert to WebP with custom quality
-repixel batch photos/ -o webp_photos/ -f webp -q 80 --recursive
+re-pixel batch photos/ -o webp_photos/ -f webp -q 80 --recursive
 
 # Optimize for web (target 500KB)
-repixel optimize large.jpg --target-size 0.5 -f jpeg -o web_ready.jpg
+re-pixel optimize large.jpg --target-size 0.5 -f jpeg -o web_ready.jpg
 
 # Get detailed image information
-repixel info photo.jpg --verbose
+re-pixel info photo.jpg --verbose
 ```
 
 ## 📊 Format Comparison
@@ -223,8 +223,8 @@ repixel info photo.jpg --verbose
 ### Setup Development Environment
 
 ```bash
-git clone https://github.com/rakshithkalmadi/repixel.git
-cd repixel
+git clone https://github.com/rakshithkalmadi/re-pixel.git
+cd re-pixel
 pip install -e ".[dev]"
 ```
 
@@ -285,8 +285,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 
-- 🐛 [Report bugs](https://github.com/rakshithkalmadi/repixel/issues)
-- 💡 [Request features](https://github.com/rakshithkalmadi/repixel/issues)
+- 🐛 [Report bugs](https://github.com/rakshithkalmadi/re-pixel/issues)
+- 💡 [Request features](https://github.com/rakshithkalmadi/re-pixel/issues)
 - 📧 Contact: your.email@example.com
 
 ---

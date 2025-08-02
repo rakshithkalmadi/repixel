@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Repixel Demo Script - Create sample images and demonstrate compression
+Re-pixel Demo Script - Create sample images and demonstrate compression
 """
 
 import os
@@ -194,12 +194,12 @@ def demonstrate_quality_optimization(sample_images: list):
 
 def main():
     """Run the complete demonstration."""
-    print("🚀 Repixel Compression Demo")
+    print("🚀 Re-pixel Compression Demo")
     print("=" * 50)
     
     # Create temporary directory for demo
     with tempfile.TemporaryDirectory() as temp_dir:
-        demo_dir = Path(temp_dir) / "repixel_demo"
+        demo_dir = Path(temp_dir) / "re_pixel_demo"
         demo_dir.mkdir()
         
         try:
@@ -214,10 +214,10 @@ def main():
             
             print("\n🎉 Demo completed successfully!")
             print("\n📝 Try these commands yourself:")
-            print("   repixel compress image.jpg -q 80 -f webp")
-            print("   repixel batch photos/ -o compressed/ -q 85")
-            print("   repixel optimize large.jpg --target-size 2.0")
-            print("   repixel info image.jpg")
+            print("   re-pixel compress image.jpg -q 80 -f webp")
+            print("   re-pixel batch photos/ -o compressed/ -q 85")
+            print("   re-pixel optimize large.jpg --target-size 2.0")
+            print("   re-pixel info image.jpg")
             
         except Exception as e:
             print(f"❌ Demo failed: {e}")
