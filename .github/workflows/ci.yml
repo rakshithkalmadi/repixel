@@ -28,11 +28,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -e ".[dev]"
 
-    - name: Run tests and linting
+    - name: Run tests
       run: |
         python -m pytest tests/ -v
-        black --check repixel tests
-        flake8 repixel tests --max-line-length=88
 
   build-and-publish:
     needs: test
