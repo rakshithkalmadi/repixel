@@ -1,8 +1,8 @@
-# 🎉 Repixel - Complete Image Compression Application & PyPI Package
+# 🎉 Re-pixel - Complete Image Compression Application & PyPI Package
 
 ## Overview
 
-**Repixel** is a powerful, production-ready image compression library and command-line tool that I've created for you. It supports multiple image formats, advanced compression algorithms, and provides both a Python API and CLI interface.
+**Re-pixel** is a powerful, production-ready image compression library and command-line tool that I've created for you. It supports multiple image formats, advanced compression algorithms, and provides both a Python API and CLI interface.
 
 ## ✅ What's Been Created
 
@@ -95,16 +95,16 @@ result = compressor.optimize_quality(
 #### **Command-Line Interface**
 ```bash
 # Single image compression
-repixel compress photo.jpg -q 85 -f webp
+re-pixel compress photo.jpg -q 85 -f webp
 
 # Batch processing
-repixel batch photos/ -o compressed/ -q 80 --recursive
+re-pixel batch photos/ -o compressed/ -q 80 --recursive
 
 # Quality optimization
-repixel optimize large.jpg --target-size 2.0
+re-pixel optimize large.jpg --target-size 2.0
 
 # Image information
-repixel info photo.jpg
+re-pixel info photo.jpg
 ```
 
 ### 🔥 Advanced Features
@@ -129,8 +129,8 @@ repixel info photo.jpg
 ### 📦 Built Package
 
 ✅ **Successfully built**:
-- `repixel-1.0.0-py3-none-any.whl` (wheel format)
-- `repixel-1.0.0.tar.gz` (source distribution)
+- `re-pixel-1.0.0-py3-none-any.whl` (wheel format)
+- `re-pixel-1.0.0.tar.gz` (source distribution)
 - ✅ Package structure validated
 - ✅ Dependencies correctly specified
 - ✅ CLI entry points configured
@@ -171,16 +171,16 @@ optimal = compressor.optimize_quality(
 
 ```bash
 # Compress single image with high quality
-repixel compress vacation.jpg -q 90 -f webp -o vacation_web.webp
+re-pixel compress vacation.jpg -q 90 -f webp -o vacation_web.webp
 
 # Batch process entire directory
-repixel batch raw_photos/ -o compressed/ -q 85 -f jpeg --recursive
+re-pixel batch raw_photos/ -o compressed/ -q 85 -f jpeg --recursive
 
 # Optimize for specific file size
-repixel optimize portrait.png --target-size 500KB -o web_portrait.jpg
+re-pixel optimize portrait.png --target-size 500KB -o web_portrait.jpg
 
 # Get detailed image information
-repixel info photo.jpg
+re-pixel info photo.jpg
 ```
 
 ## 📈 Performance & Statistics
@@ -195,13 +195,13 @@ The demo shows impressive compression results:
 
 ### For End Users
 ```bash
-pip install repixel  # (when published to PyPI)
+pip install re-pixel  # (when published to PyPI)
 ```
 
 ### For Development
 ```bash
-git clone https://github.com/rakshithkalmadi/repixel.git
-cd repixel
+git clone https://github.com/rakshithkalmadi/re-pixel.git
+cd re-pixel
 python setup_dev.py  # Automated setup
 # OR
 pip install -e ".[dev]"  # Manual setup
@@ -255,4 +255,4 @@ python build_package.py --upload
 - **Well Documented**: Comprehensive documentation and examples
 - **PyPI Ready**: Proper package structure for easy distribution
 
-The **Repixel** package is now complete and ready for use! It provides a professional-grade image compression solution with all the features you requested. 🎉
+The **Re-pixel** package is now complete and ready for use! It provides a professional-grade image compression solution with all the features you requested. 🎉

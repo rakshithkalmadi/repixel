@@ -1,7 +1,7 @@
 @echo off
 REM Quick setup script for Windows
 
-echo 🚀 Setting up Repixel development environment
+echo 🚀 Setting up Re-pixel development environment
 
 REM Check if Python is available
 python --version >nul 2>&1
@@ -23,7 +23,7 @@ echo ⬆️  Upgrading pip...
 python -m pip install --upgrade pip
 
 REM Install package in development mode
-echo 📥 Installing repixel in development mode...
+echo 📥 Installing re-pixel in development mode...
 pip install -e ".[dev]"
 
 echo ✅ Setup complete!

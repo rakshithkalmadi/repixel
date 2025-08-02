@@ -1,5 +1,5 @@
 """
-Tests for repixel image compression library
+Tests for re-pixel image compression library
 """
 
 import unittest

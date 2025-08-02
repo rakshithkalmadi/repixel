@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Setup development environment for repixel
+Setup development environment for re-pixel
 """
 
 import subprocess
@@ -29,7 +29,7 @@ def check_python_version():
         return True
     else:
         print(f"❌ Python {version.major}.{version.minor}.{version.micro} is not compatible")
-        print("Repixel requires Python 3.7 or higher")
+        print("Re-pixel requires Python 3.7 or higher")
         return False
 
 
@@ -37,7 +37,7 @@ def install_dependencies():
     """Install all dependencies."""
     commands = [
         ("python -m pip install --upgrade pip", "Upgrading pip"),
-        ("pip install -e .", "Installing repixel in development mode"),
+        ("pip install -e .", "Installing re-pixel in development mode"),
         ("pip install -e \".[dev]\"", "Installing development dependencies"),
     ]
     
@@ -105,7 +105,7 @@ def create_sample_config():
             "console": "integratedTerminal"
         },
         {
-            "name": "Repixel CLI",
+            "name": "Re-pixel CLI",
             "type": "python",
             "request": "launch",
             "module": "repixel.cli",
@@ -126,7 +126,7 @@ def run_initial_tests():
 
 def main():
     """Main setup process."""
-    print("🚀 Setting up Repixel development environment")
+    print("🚀 Setting up Re-pixel development environment")
     print("=" * 50)
     
     # Check Python version

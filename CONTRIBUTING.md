@@ -1,6 +1,6 @@
-# Contributing to Repixel
+# Contributing to Re-pixel
 
-We love your input! We want to make contributing to Repixel as easy and transparent as possible, whether it's:
+We love your input! We want to make contributing to Re-pixel as easy and transparent as possible, whether it's:
 
 - Reporting a bug
 - Discussing the current state of the code
@@ -27,8 +27,8 @@ Pull requests are the best way to propose changes to the codebase. We actively w
 
 ```bash
 # Clone the repository
-git clone https://github.com/rakshithkalmadi/repixel.git
-cd repixel
+git clone https://github.com/rakshithkalmadi/re-pixel.git
+cd re-pixel
 
 # Create virtual environment
 python -m venv venv

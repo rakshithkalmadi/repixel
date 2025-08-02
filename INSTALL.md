@@ -1,16 +1,16 @@
-# Installation Guide for Repixel
+# Installation Guide for Re-pixel
 
 ## Quick Installation (End Users)
 
 ### From PyPI (When Published)
 ```bash
-pip install repixel
+pip install re-pixel
 ```
 
 ### Test the Installation
 ```bash
-repixel --version
-repixel formats
+re-pixel --version
+re-pixel formats
 ```
 
 ## Development Installation
@@ -19,15 +19,15 @@ repixel formats
 
 **Windows:**
 ```cmd
-git clone https://github.com/rakshithkalmadi/repixel.git
-cd repixel
+git clone https://github.com/rakshithkalmadi/re-pixel.git
+cd re-pixel
 setup.bat
 ```
 
 **Linux/macOS:**
 ```bash
-git clone https://github.com/rakshithkalmadi/repixel.git
-cd repixel
+git clone https://github.com/rakshithkalmadi/re-pixel.git
+cd re-pixel
 chmod +x setup.sh
 ./setup.sh
 ```
@@ -36,8 +36,8 @@ chmod +x setup.sh
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/rakshithkalmadi/repixel.git
-cd repixel
+git clone https://github.com/rakshithkalmadi/re-pixel.git
+cd re-pixel
 ```
 
 2. **Create virtual environment:**
@@ -112,7 +112,7 @@ twine upload --repository testpypi dist/*
 
 3. **Test installation from Test PyPI:**
 ```bash
-pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ repixel
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ re-pixel
 ```
 
 4. **Upload to production PyPI:**
@@ -130,11 +130,11 @@ python build_package.py --upload
 ### Test the Installation
 ```bash
 # Test CLI
-repixel --version
-repixel formats
+re-pixel --version
+re-pixel formats
 
 # Test Python API
-python -c "import repixel; print('Repixel imported successfully')"
+python -c "import repixel; print('Re-pixel imported successfully')"
 
 # Run demo
 python demo.py
@@ -170,8 +170,8 @@ python --version
 ### Getting Help
 
 - 📖 [Documentation](README.md)
-- 🐛 [Issues](https://github.com/rakshithkalmadi/repixel/issues)
-- 💬 [Discussions](https://github.com/rakshithkalmadi/repixel/discussions)
+- 🐛 [Issues](https://github.com/rakshithkalmadi/re-pixel/issues)
+- 💬 [Discussions](https://github.com/rakshithkalmadi/re-pixel/discussions)
 
 ## Environment Variables
 
@@ -179,11 +179,11 @@ You can set these environment variables for custom behavior:
 
 ```bash
 # Skip certain checks during build
-export REPIXEL_SKIP_TESTS=1
-export REPIXEL_SKIP_QUALITY=1
+export RE_PIXEL_SKIP_TESTS=1
+export RE_PIXEL_SKIP_QUALITY=1
 
 # Custom PyPI repository
-export REPIXEL_PYPI_REPO=testpypi
+export RE_PIXEL_PYPI_REPO=testpypi
 ```
 
 ## CI/CD

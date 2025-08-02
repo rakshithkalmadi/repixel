@@ -1,5 +1,5 @@
 """
-Repixel - A powerful image compression library
+Re-pixel - A powerful image compression library
 """
 
 __version__ = "1.0.0"
