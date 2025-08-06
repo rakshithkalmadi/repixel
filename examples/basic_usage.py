@@ -90,9 +90,7 @@ def advanced_compression_example():
             quality=90,
             format="jpeg",
             optimize=True,
-            progressive=True,
-            enhance_sharpness=True,
-            sharpness_factor=1.2
+            progressive=True
         )
         
         print(f"Advanced JPEG compression complete")

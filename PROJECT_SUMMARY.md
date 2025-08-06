@@ -129,8 +129,8 @@ re-pixel info photo.jpg
 ### 📦 Built Package
 
 ✅ **Successfully built**:
-- `re-pixel-1.0.0-py3-none-any.whl` (wheel format)
-- `re-pixel-1.0.0.tar.gz` (source distribution)
+- `re-pixel-1.0.1-py3-none-any.whl` (wheel format)
+- `re-pixel-1.0.1.tar.gz` (source distribution)
 - ✅ Package structure validated
 - ✅ Dependencies correctly specified
 - ✅ CLI entry points configured
