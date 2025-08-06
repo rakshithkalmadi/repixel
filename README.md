@@ -8,7 +8,7 @@
 
 ## ✨ Features
 
-- **Multiple Format Support**: JPEG, PNG, WebP, BMP, TIFF
+- **Multiple Format Support**: JPEG, PNG, WebP
 - **Smart Compression**: Automatic quality optimization for target file sizes
 - **Batch Processing**: Compress entire directories with progress tracking
 - **Advanced Algorithms**: Multiple compression techniques including lossless options
@@ -108,16 +108,14 @@ from repixel import ImageCompressor
 
 compressor = ImageCompressor()
 
-# JPEG with progressive encoding and sharpening
+# JPEG with progressive encoding
 result = compressor.compress(
     input_path="photo.jpg",
     output_path="optimized.jpg",
     quality=90,
     format="jpeg",
     optimize=True,
-    progressive=True,
-    enhance_sharpness=True,
-    sharpness_factor=1.2
+    progressive=True
 )
 
 # WebP lossless compression
@@ -220,6 +218,8 @@ re-pixel info photo.jpg --verbose
 
 ## 🛠️ Development
 
+For comprehensive development instructions, including building, testing, and installation methods, see [DEVELOPMENT.md](DEVELOPMENT.md).
+
 ### Setup Development Environment
 
 ```bash
@@ -265,11 +265,18 @@ twine upload dist/*
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
+### Development Setup
+
+For detailed development instructions, see [DEVELOPMENT.md](DEVELOPMENT.md).
+
+Quick start:
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+3. Set up development environment (`pip install -e ".[dev]"`)
+4. Run tests (`python -m pytest tests/ -v`)
+5. Commit your changes (`git commit -m 'Add amazing feature'`)
+6. Push to the branch (`git push origin feature/amazing-feature`)
+7. Open a Pull Request
 
 ## 📄 License
 

@@ -128,7 +128,16 @@ class PNGCompressor(BaseCompressor):
                 if quality < 90 and img.mode in ("RGB", "RGBA"):
                     # Reduce colors for better compression
                     colors = max(16, int(256 * (quality / 100)))
-                    img = img.quantize(colors=colors, method=Image.Quantize.MEDIANCUT)
+                    
+                    # Use appropriate quantization method based on image mode
+                    if img.mode == "RGBA":
+                        # For RGBA images, first convert to RGB with alpha handling
+                        background = Image.new("RGB", img.size, (255, 255, 255))
+                        background.paste(img, mask=img.split()[-1])
+                        img = background.quantize(colors=colors, method=Image.Quantize.MEDIANCUT)
+                    else:
+                        # For RGB images, use MEDIANCUT method
+                        img = img.quantize(colors=colors, method=Image.Quantize.MEDIANCUT)
                     # Keep palette mode for better compression - don't convert back to RGB
 
                 # Apply additional processing
@@ -362,7 +371,7 @@ class AdvancedCompressor:
                     img.save(output_path, format="JPEG", quality=quality, optimize=True)
 
                 elif format.upper() == "PNG":
-                    img.save(output_path, format="PNG", optimize=True)
+                    img.save(output_path, format="PNG", compress_level=9, optimize=True)
 
                 elif format.upper() == "WEBP":
                     img.save(output_path, format="WEBP", quality=quality, optimize=True)

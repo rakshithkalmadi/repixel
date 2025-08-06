@@ -2,7 +2,7 @@
 Re-pixel - A powerful image compression library
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "Rakshith Kalmadi"
 __email__ = "rakshithkalmadi@gmail.com"
 

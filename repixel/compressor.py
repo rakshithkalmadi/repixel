@@ -136,7 +136,7 @@ class ImageCompressor:
         output_dir.mkdir(exist_ok=True)
 
         # Find image files
-        patterns = ["*.jpg", "*.jpeg", "*.png", "*.webp", "*.bmp", "*.tiff"]
+        patterns = ["*.jpg", "*.jpeg", "*.png", "*.webp"]
         image_files = []
 
         if recursive:
