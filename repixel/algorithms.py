@@ -70,15 +70,6 @@ class JPEGCompressor(BaseCompressor):
                 elif img.mode != "RGB":
                     img = img.convert("RGB")
 
-                # Apply additional optimizations if specified
-                if kwargs.get("enhance_sharpness"):
-                    enhancer = ImageEnhance.Sharpness(img)
-                    img = enhancer.enhance(kwargs.get("sharpness_factor", 1.2))
-
-                if kwargs.get("enhance_contrast"):
-                    enhancer = ImageEnhance.Contrast(img)
-                    img = enhancer.enhance(kwargs.get("contrast_factor", 1.1))
-
                 # Save with JPEG compression
                 save_kwargs = {
                     "format": "JPEG",
@@ -114,7 +105,7 @@ class PNGCompressor(BaseCompressor):
         input_path: Union[str, Path],
         output_path: Union[str, Path],
         quality: int = 85,
-        compress_level: int = 6,
+        compress_level: int = 9,  # Use maximum compression by default
         optimize: bool = True,
         **kwargs,
     ) -> Dict[str, Any]:
@@ -138,8 +129,7 @@ class PNGCompressor(BaseCompressor):
                     # Reduce colors for better compression
                     colors = max(16, int(256 * (quality / 100)))
                     img = img.quantize(colors=colors, method=Image.Quantize.MEDIANCUT)
-                    if img.mode == "P":
-                        img = img.convert("RGB")
+                    # Keep palette mode for better compression - don't convert back to RGB
 
                 # Apply additional processing
                 if kwargs.get("remove_alpha") and img.mode == "RGBA":
@@ -217,11 +207,20 @@ class WebPCompressor(BaseCompressor):
                     "optimize": True,
                 }
 
-                # Add additional WebP-specific options
+                # Add additional WebP-specific options for better compression
                 if not lossless:
                     save_kwargs.update(
                         {
                             "save_all": True,
+                            "minimize_size": True,
+                            "exact": False,  # Allow encoder to use different quality for better compression
+                        }
+                    )
+                else:
+                    # For lossless, use additional optimization
+                    save_kwargs.update(
+                        {
+                            "exact": True,
                             "minimize_size": True,
                         }
                     )
@@ -272,13 +271,6 @@ class AdvancedCompressor:
             img = cv2.imread(str(input_path))
             if img is None:
                 raise ValueError(f"Could not read image: {input_path}")
-
-            # Apply noise reduction
-            img = cv2.bilateralFilter(img, 9, 75, 75)
-
-            # Apply sharpening
-            kernel = np.array([[-1, -1, -1], [-1, 9, -1], [-1, -1, -1]])
-            img = cv2.filter2D(img, -1, kernel)
 
             # Save with appropriate codec
             if format.upper() == "JPEG":
